@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.carousel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+    <div class="container">
+
+      <div class="carousel-left"><</div>
+      <div class="carousel">
+        <ul>
+          <li>
+            <img src="img/space1.jpg" alt="">
+            <p>Описание 1</p>
+          </li>
+          <li>
+            <img src="img/space2.jpg" alt="">
+            <p>Описание 2</p>
+          </li>
+          <li>
+            <img src="img/space3.jpg" alt="">
+            <p>Описание 3</p>
+          </li>
+          <li>
+            <img src="img/space4.jpg" alt="">
+            <p>Описание 4</p>
+          </li>
+          <li>
+            <img src="img/space5.jpg" alt="">
+            <p>Описание 5</p>
+          </li>
+          <li>
+            <img src="img/space6.jpg" alt="">
+            <p>Описание 6</p>
+          </li>
+          <li>
+            <img src="img/space7.jpg" alt="">
+            <p>Описание 7</p>
+          </li>
+          <li>
+            <img src="img/space2.jpg" alt="">
+            <p>Описание 8</p>
+          </li>
+          <li>
+            <img src="img/space3.jpg" alt="">
+            <p>Описание 9</p>
+          </li>
+          <li>
+            <img src="img/space4.jpg" alt="">
+            <p>Описание 10</p>
+          </li>
+          <li>
+            <img src="img/space6.jpg" alt="">
+            <p>Описание 11</p>
+          </li>
+          <li>
+            <img src="img/space5.jpg" alt="">
+            <p>Описание 12</p>
+          </li>
+        </ul>
+      </div>
+      <div class="carousel-right">></div>
+    </div>
+
+
+
+
+    <script type="text/html" id="template">
+    <% for (var i = 0; i < data.length; i++){ %>
+    <div class="container1">
+      <h1><%= data[i].name %></h1>
+      <div class="foto"><img src="img/1.png" alt="foto"></div>
+      <p><%= data[i].status %></p>
+      <div class="hr"></div>
+      <p>Хочу учить фронтенд, потому что:</p>
+      <ul>
+        <li><%= data[i].reason1 %></li>
+        <li><%= data[i].reason2 %></li>
+        <li><%= data[i].reason3 %></li>
+      </ul>
+      <div class="hr"></div>
+      <p class="tel">Мой контактный телефон</p>
+      <p><%= data[i].tel %></p>
+      <div class="br"></div>
+      <p class="profile">Вконтакте меня нету</p>
+      <div class="hr"></div>
+      <p class="fid">Мой фидбек</p>
+      <p><%= data[i].feedback %></p>
+    </div>
+    <% }; %>
+    </script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/jquery.carousel.js"></script>
+    <script>
+      $(function(){
+        $().carousel({
+          items: 2
+        });
+      });
+    </script>
+    <script src="js/tmpl.js"></script>
+  </body>
+</html>

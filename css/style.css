@@ -1,0 +1,82 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+	background: #efefef;
+	padding-top: 5px;
+	padding-bottom: 50px;
+	font-family: Times New Roman, sans-serif;
+
+}
+.container{
+	width: auto;
+	display: table;
+}
+.container1{
+	width: 510px;
+	background: white;
+	margin: 0 auto;
+	border: 1px solid white;
+	padding: 32px 50px; 
+	margin-bottom: 50px;
+	
+	box-sizing:border-box;
+	-webkit-box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 0.5);
+-moz-box-shadow:    0px 0px 2px 0px rgba(50, 50, 50, 0.5);
+box-shadow:         0px 0px 2px 0px rgba(50, 50, 50, 0.5);
+
+}
+.container1 h1{
+	width:100%;
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+}
+.foto{
+	width: 135px;
+	margin: 0 auto;
+	margin-top: 22px;
+	
+}
+.hr{
+	width: 100%;
+	border-bottom:1px solid #7b7b7b;
+}
+.container1 p{
+	margin-top: 7px;
+	padding-left: 13px;
+	font-size: 18px;
+}
+
+.hr+p{
+	margin-top: 23px;
+}
+p+ul{
+	margin-top: 32px;
+}
+.container1 li{
+
+	font-size: 18px;
+	margin-top: 5px;
+}
+.hr+.tel{
+	margin-top: 25px;
+	margin-bottom:0px;
+}
+.br{
+	margin-top:15px;
+	border: 1px solid white;
+}
+.profile{
+	margin-bottom: 5px;
+}
+.link{
+	padding-left: 13px;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+.fid{
+	margin-bottom: 0px;
+}

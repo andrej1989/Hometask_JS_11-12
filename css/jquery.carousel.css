@@ -1,0 +1,37 @@
+.carousel{
+	width: 600px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.carousel-left,
+.carousel-right{
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	top: 30px;
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.carousel ul{
+	list-style: none;
+	width: 99999px;
+	padding: 0;
+	position: relative;
+	font-size: 0;
+}
+
+.carousel li{
+	display: inline-block;
+	margin-right: 25px;
+	vertical-align: middle;
+	font-size: 14px;
+	text-align: center;
+}
+
+.carousel img{
+	width: 100px;
+}
